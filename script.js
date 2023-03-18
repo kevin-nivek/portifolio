@@ -28,7 +28,6 @@ function passarSlide(){
 		slideitem_cert++;
 	}
 
-	console.log("-"+slidewidth_cert +" "+slideitem_cert+"px")
 	document.getElementsByClassName("slider-area")[0].style.marginLeft = "-"+(slideitem_cert* slide_item_size )+"px";
 	console.log(document.getElementsByClassName("slider-area")[0].style.marginLeft)
 
@@ -44,7 +43,6 @@ function passarSlideSkill(){
 		slideitem_skill++;
 	}
 
-	console.log("-"+slidewidth_skill +" "+slideitem_skill+"px")
 	document.getElementsByClassName("skill-slider-area")[0].style.marginLeft = "-"+(slideitem_skill* slide_item_size )+"px";
 
 }
