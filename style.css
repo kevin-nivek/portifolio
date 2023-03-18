@@ -4,7 +4,7 @@ body{
   background-image: url('./src/images/background.jpg') ;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Roboto";
+  font-family: sans-serif;
 }
 
 main{
@@ -159,12 +159,47 @@ background-color: #2a292985;
   float: left;
   border-radius: 5px;
 }
+.row-title-skill{
+  height: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  justify-content: center;
+}
+.circle-nivel {
+  width: 25px;
+  height: 25px;
+  border: 3px solid ;
+  border-radius: 50%;
+  margin-right: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nivel-4{
+border-color: #0036FF;
+}
+
+.nivel-3{
+border-color: #04FF00;
+}
+
+.nivel-2{
+border-color: #FFFB00 ;
+}
+
+.nivel-1{
+border-color: #FF2300;
+}
 
 .logo-skills{
   width: 140px;
   height: 140px;
   background-color: #38373794;
   border-radius: 5px;
+  margin-top: 5px;
 }
 
 .img-logo{
