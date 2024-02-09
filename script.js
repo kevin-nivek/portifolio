@@ -46,3 +46,15 @@ function passarSlideSkill(){
 	document.getElementsByClassName("skill-slider-area")[0].style.marginLeft = "-"+(slideitem_skill* slide_item_size )+"px";
 
 }
+
+function createBackgrounComponents(){
+	let divbg = document.querySelector('.bg-grid')
+	let divsAdd = '<div class="bg-item"></div> '
+	for(let i = 0; i < 400; i++){
+		divsAdd += '<div class="bg-item"></div> '
+
+	}
+	divbg.innerHTML = divsAdd
+}
+
+createBackgrounComponents()
