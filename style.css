@@ -5,21 +5,26 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   font-family: sans-serif;
-  max-height: 100vh;
-  overflow: hidden;
+/*  max-height: 100vh;*/
+/*  overflow: hidden;*/
 }
-
+a{
+  text-decoration: none;
+  color: unset;
+  
+}
 main{
  margin: auto; 
  align-self: center;
  width: 80vw;
- height: 100vh;
+ min-height: 100vh;
  background-color: #44434347;
 /* background-color: #0B0B0B78;*/
   z-index: 2;
   position: absolute;
   top: 0;
   left: 10vw;
+
 }
 
 .infos-pessoais{
@@ -45,7 +50,7 @@ main{
 .animated-boder::before {
   box-sizing: border-box;
 }
- .animated-boder::after {
+.animated-boder::after {
   box-sizing: border-box;
 }
 
@@ -85,7 +90,7 @@ main{
     animation: rotate 4s linear infinite;
   }
   
-  .foto-borded::after {
+.foto-borded::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -143,6 +148,7 @@ background-color: #2a292985;
   width: 215px;
   margin: auto;
 }
+
 .row-skill{
   margin-top: 10px;
 /*  background-color: #0d0d0d;*/
@@ -158,6 +164,7 @@ background-color: #2a292985;
   height: 220px;
   transition: all 1s;
 }
+
 .item-slider-skill{
   width: 200px;
   height: 200px;
@@ -166,6 +173,7 @@ background-color: #2a292985;
   float: left;
   border-radius: 5px;
 }
+
 .row-title-skill{
   height: 25px;
   display: flex;
@@ -173,6 +181,7 @@ background-color: #2a292985;
   font-size: 16px;
   justify-content: center;
 }
+
 .circle-nivel {
   width: 25px;
   height: 25px;
@@ -218,6 +227,7 @@ border-color: #FF2300;
   width: 120px;
   height: 120px;
 }
+
 .area-divider{
   width: 98%;
   display: flex;
@@ -229,10 +239,14 @@ border-color: #FF2300;
 .article-70{
   width: 69%;
 }
+
+
+/* CERTIFICADO  */
 .certificados-area{
     background-color: #14141466;
     border-radius: 0px 0px 5px 5px ;
 }
+
 .title-cert-area{
   line-height: 35px;
   background-color: #0a0a0a;
@@ -275,15 +289,19 @@ border-color: #FF2300;
   float: left;
   border-radius: 5px;
 }
+
 .item-slider-cert:first-child{
   margin-left: 10px;
 }
+
 .item-slider-cert:last-child{
   margin-right: 10px;
 }
+
 .item-slider-cert figure{
 text-align: center;
 }
+
 .img-cert{
   width: 80px;
   height: 80px;
@@ -303,6 +321,7 @@ text-align: center;
   width: 29%;
 
 }
+
 .body-aside{
   border-radius: 5px 5px 0px 0px;
   background-color: #0b0b0b;
@@ -324,11 +343,13 @@ text-align: center;
 .icons-social{
  
 }
+
 .link-icons-social{
   width: 60px;
   height: 60px;
   text-decoration: none;
 }
+
 .img-social{
   width: 50px;
   height: 50px;
@@ -338,6 +359,7 @@ text-align: center;
   padding: 10px;
   
 }
+
 .links-area a{
   text-decoration: none;
   color: #acacac;
@@ -351,6 +373,7 @@ text-align: center;
   align-items: baseline;
   margin-bottom: 10px;
 }
+
 .title-link{
   margin-top: 0;
   margin-left: 8px;
@@ -366,10 +389,13 @@ text-align: center;
   animation: animate 4s linear infinite;
 }
 
+
+
+/* BACKGROUND  */
 .bg-grid{
   display: grid;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  z-index: 0;
   grid-template-columns:  repeat(20, 1fr);
   grid-template-rows: repeat(10, 1fr);
   gap: 3px;
@@ -401,9 +427,15 @@ text-align: center;
   }
   
 }
-
-.all-infos::before 
-{
+.bg-anim{
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+}
+.bg-anim::before 
+{ 
+  z-index: -1;
   content: '';
   position: absolute;
   width: 100%;
@@ -411,7 +443,6 @@ text-align: center;
   background: linear-gradient(#710a0a,#000,#000);
   animation: backgroundAnimation 5s linear infinite;
 }
-
 @keyframes backgroundAnimation 
 {
   0%
@@ -423,3 +454,70 @@ text-align: center;
     transform: translateY(100%);
   }
 }
+
+/* PROEJTOS  */
+
+.proj-area{
+    margin: 5px 8px;
+}
+
+.body-proj{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+   margin-top: 10px;
+}
+
+.grid-proj{
+  /*display: flex;
+  align-items: center;
+  justify-content: center;
+  */
+ 
+  background-color: #0d0d0d;
+  border-radius: 8px;
+ /* width: 98%;
+  margin-bottom: 10px;
+
+  overflow: hidden;*/
+}
+.item-proj{
+  margin: 8px;
+}
+
+.imagens-projeto{
+  width: 100%;
+  display: flex;
+}
+.grid-proj figure{
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.img-proj{
+  width: 100%;
+/*  max-height: 250px;*/
+}
+
+
+
+.infos-proj{
+  margin-bottom: 10px;
+}
+.title-proj{
+  text-align: center;
+  color: #efefef;
+}
+
+.description-proj{
+  text-align: center;
+  color: #dfdfdf;
+  font-size: 14px;
+  padding-left:8px ;
+  
+}
+
